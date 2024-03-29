@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useRef, useEffect } from "react";
 import { useMotionValue, useSpring, useInView } from "framer-motion";
 import Head from 'next/head';
@@ -7,6 +8,8 @@ import Layout from "@/components/Layout";
 import profilePic from '../../public/images/profile/profile-pic.jpg';
 import Statistic from "@/components/Statistic";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 export const AnimatedNumbers = ({ value }) => {
     const ref = useRef(null);
@@ -66,6 +69,8 @@ const About = () => {
                         </div>
                     </div>
                     <Skills />
+                    <Experience />
+                    <Education />
                 </Layout>
             </main>
         </>

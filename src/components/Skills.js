@@ -20,9 +20,9 @@ const Skills = () => {
                 </motion.div>
                 <Skill name="Rust" x="-30vw" y="-5vw"/>
                 <Skill name="React" x="-20vw" y="6vw"/>
-                <Skill name="Go" x="14vw" y="15vw"/>
+                <Skill name="Go" x="14vw" y="16vw"/>
                 <Skill name="C/C++" x="-5vw" y="-8vw"/>
-                <Skill name="Node.js" x="5vw" y="8vw"/>
+                <Skill name="JavaScript" x="5vw" y="8vw"/>
                 <Skill name="Python" x="17vw" y="-9vw"/>
                 <Skill name="SQL" x="0vw" y="-18vw"/>
                 <Skill name="Java" x="37vw" y="6vw"/>
