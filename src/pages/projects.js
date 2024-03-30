@@ -13,8 +13,8 @@ const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, githubLink }) => {
     return (
-        <article className="w-full relative flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl rounded-br-2xl p-12">
-            <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] rounded-br-3xl bg-dark"></div>
+        <article className="w-full relative flex items-center justify-between rounded-3xl border border-solid border-dark bg-light dark:border-light dark:bg-dark shadow-2xl rounded-br-2xl p-12">
+            <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] rounded-br-3xl bg-dark dark:bg-light"></div>
             <Link href={link} target="_blank"
                 className="w-1/2 cursor-pointer rounded-lg overflow-hidden"
             >
@@ -24,15 +24,15 @@ const FeaturedProject = ({ type, title, summary, img, link, githubLink }) => {
                 />
             </Link>
 
-            <div className="w-1/2 flex flex-col items-start justify-between pl-8">
-                <span className="text-primary font-medium text-xl">{type}</span>
+            <div className="w-1/2 flex flex-col dark:text-light items-start justify-between pl-8">
+                <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
                 <Link href={link} target="_blank" className="hover:underline underline-offset-2">
                     <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
                 </Link>
-                <p className="my-2 font-medium text-dark">{summary}</p>
+                <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
                 <div className="mt-2 flex items-center ">
                     <Link href={githubLink} target="_blank" className="w-12"><GithubIcon /></Link>
-                    <Link href={link} target="_blank" className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold">Visit Project</Link>
+                    <Link href={link} target="_blank" className="ml-4 rounded-lg bg-dark text-light dark:bg-light dark:text-dark p-2 px-6 text-lg font-semibold">Visit Project</Link>
                 </div>
             </div>
         </article>
@@ -41,8 +41,8 @@ const FeaturedProject = ({ type, title, summary, img, link, githubLink }) => {
 
 const Project = ({ title, type, img, link, githubLink }) => {
     return (
-        <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative">
-            <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] rounded-br-3xl bg-dark"></div>
+        <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark dark:bg-dark dark:border-light bg-light p-6 relative">
+            <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] rounded-br-3xl bg-dark dark:bg-light"></div>
             <Link href={link} target="_blank"
                 className="w-full cursor-pointer rounded-lg overflow-hidden"
             >
@@ -52,8 +52,8 @@ const Project = ({ title, type, img, link, githubLink }) => {
                 />
             </Link>
 
-            <div className="w-full flex flex-col items-start justify-between mt-4">
-                <span className="text-primary font-medium text-xl">{type}</span>
+            <div className="w-full flex flex-col items-start justify-between mt-4 dark:text-light">
+                <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
                 <Link href={link} target="_blank" className="hover:underline underline-offset-2">
                     <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
                 </Link>
