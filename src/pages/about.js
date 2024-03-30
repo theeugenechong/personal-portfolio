@@ -60,7 +60,7 @@ const About = () => {
                         </div>
                         <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light dark:bg-dark dark:border-light p-8">
                             <div className="absolute top-0 -right-2 -z-10 w-[102%] h-[102%] rounded-2xl bg-dark dark:bg-light"></div>
-                            <Image src={profilePic} alt="Eugene Chong" className="w-full h-auto rounded-2xl"/>
+                            <Image src={profilePic} alt="Eugene Chong" className="w-full h-auto rounded-2xl" priority sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'/>
                         </div>
                         <div className="col-span-2 flex flex-col items-end justify-between ">
                             <Statistic number={50} achievement="Clients Satisfied"/>

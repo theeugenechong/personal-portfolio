@@ -19,7 +19,7 @@ export default function Home() {
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
             <div className="w-1/2">
-              <Image src={profilePic} alt="Eugene Chong" className='w-full h-auto ml-[-45px] mt-[-15px]' />
+              <Image src={profilePic} alt="Eugene Chong" className='w-full h-auto ml-[-45px] mt-[-15px]' priority sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw' />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center">
               <AnimatedText text="Engineering Solutions, Creating Value." className="!text-6xl !text-left" />
