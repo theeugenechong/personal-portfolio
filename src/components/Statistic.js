@@ -7,7 +7,7 @@ const Statistic = ({ number, achievement }) => {
             <span className="inline-block text-7xl font-bold">
                 <AnimatedNumbers value={number}/>+
             </span>
-            <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">{achievement}</h2>
+            <h2 className="text-xl text-right font-medium capitalize text-dark/75 dark:text-light/75">{achievement}</h2>
         </div>
     );
 };

@@ -49,13 +49,16 @@ const About = () => {
                         <div className="col-span-3 flex flex-col items-start justify-start">
                             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">About Me</h2>
                             <p className="text-base font-medium">
-                                Hi, I'm Eugene, a web developer and UI/UX designer with a passion for creating beautiful, functional, and user-centered digital experiences. With 4 years of experience in the field. I am always looking for new and innovative ways to bring my clients' visions to life.
+                                Hello, World! 🌍 I'm Eugene.
                             </p>
                             <p className="text-base font-medium my-4">
-                                I believe that design is about more than just making things look pretty – it's about solving problems and creating intuitive, enjoyable experiences for users. 
+                                I am currently in the final lap of my Computer Engineering undergrad journey, armed with a toolkit of coding languages like Go, Rust, Python, and C++. From software engineering to algorithms to distributed systems, and even dabbling in a bit of machine learning, I've been on a WILD ride of discovery.
                             </p>
-                            <p className="text-base font-medium my-4]">
-                                Whether I'm working on a website, mobile app, or other digital product, I bring my commitment to design excellence and user-centered thinking to every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
+                            <p className="text-base font-medium my-4">
+                                They say college isn't just textbooks and exams (although, let's be honest they kinda were). I dove headfirst into a bunch of awesome engineering projects with my amazing peers. These adventures not only enhanced my technical skills, but also honed my soft skills. From leading teams to sparking brainstorming sessions, I've embraced every opportunity to grow.
+                            </p>
+                            <p className="text-base font-medium my-4">
+                            And guess what? I'm just getting started. If you’re looking for someone who’s got the technical chops, a thirst for learning, and a fun personality, I'm ready! 💪
                             </p>
                         </div>
                         <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light dark:bg-dark dark:border-light p-8">
@@ -63,9 +66,9 @@ const About = () => {
                             <Image src={profilePic} alt="Eugene Chong" className="w-full h-auto rounded-2xl" priority sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'/>
                         </div>
                         <div className="col-span-2 flex flex-col items-end justify-between ">
-                            <Statistic number={50} achievement="Clients Satisfied"/>
-                            <Statistic number={10} achievement="Projects Completed"/>
-                            <Statistic number={4} achievement="Years of Experience"/>
+                            <Statistic number={7} achievement="Programming Languages Learnt"/>
+                            <Statistic number={5} achievement="Projects Completed"/>
+                            <Statistic number={4} achievement="Years of Education"/>
                         </div>
                     </div>
                     <Skills />

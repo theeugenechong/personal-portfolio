@@ -4,8 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
-import project2 from "../../public/images/projects/portfolio-cover-image.jpg";
+import project1 from "../../public/images/projects/lasertag.jpg";
+import project2 from "../../public/images/projects/spotify-etl.jpg";
+import project3 from "../../public/images/projects/nextjs-portfolio.jpg";
+import project4 from "../../public/images/projects/gocurrent.jpg";
+import project5 from "../../public/images/projects/rails.jpg";
+import project6 from "../../public/images/projects/cooper.jpg";
 import { GithubIcon } from "@/components/Icons";
 import { motion } from "framer-motion";
 
@@ -81,59 +85,58 @@ const Projects = () => {
                     <div className="grid grid-cols-12 gap-24 gap-y-32">
                         <div className="col-span-12">
                             <FeaturedProject
-                                type="Personal Project"
-                                title="Crypto Screener Application"
-                                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                                local currency."
+                                type="Capstone Project"
+                                title="Laser Tag++"
+                                summary="A real-time multiplayer laser tag game that uses Bluetooth Low Energy (BLE) technology. The project is built in Unity, Python, and Arduino. Communication between devices is done using BLE. In-game actions are detected with the help of a lightweight neural network deployed in the cloud."
                                 img={project1}
-                                link="/"
-                                githubLink="https://www.github.com"
+                                link="https://github.com/CG4002-Capstone-Project-B8/BleClient"
+                                githubLink="https://github.com/CG4002-Capstone-Project-B8/BleClient"
                             />
                         </div>
                         <div className="col-span-6">
                             <Project 
-                                title="Crypto Screener Application"
+                                title="Spotify ETL"
                                 type="Personal Project"
-                                img={project1}
-                                link="/"
-                                githubLink="https://www.github.com"
+                                img={project2}
+                                link="https://github.com/theeugenechong/SpotifyETL"
+                                githubLink="https://github.com/theeugenechong/SpotifyETL"
                             />
                         </div>
                         <div className="col-span-6">
                             <Project 
-                                title="Crypto Screener Application"
+                                title="Next.js Portfolio Website"
                                 type="Personal Project"
-                                img={project1}
+                                img={project3}
                                 link="/"
                                 githubLink="https://www.github.com"
                             />
                         </div>
                         <div className="col-span-12">
                             <FeaturedProject
-                                title="Next.js Portfolio Website"
-                                type="Personal Project"
-                                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
-                                img={project2}
+                                title="GoCurrent"
+                                type="Academic Project"
+                                summary="A web-based VM implementation for a sublanguage of Go in TypeScript. Focuses mainly on concurrency constructs in Go. The project is built Next.js, Tailwind CSS, and TypeScript."
+                                img={project4}
                                 link="/"
                                 githubLink={"https://www.github.com"}
                             />
                         </div>
                         <div className="col-span-6">
                             <Project
-                                title="Next.js Portfolio Website"
+                                title="Rails Sample App"
                                 type="Personal Project"
-                                img={project2}
-                                link="/"
-                                githubLink="https://www.github.com"
+                                img={project5}
+                                link="https://github.com/theeugenechong/hello_app"
+                                githubLink="https://github.com/theeugenechong/hello_app"
                             />
                         </div>
                         <div className="col-span-6">
                             <Project
-                                title="Next.js Portfolio Website"
-                                type="Personal Project"
-                                img={project2}
-                                link="/"
-                                githubLink="https://www.github.com"
+                                title="cOOPer"
+                                type="Academic Project"
+                                img={project6}
+                                link="https://github.com/theeugenechong/tp"
+                                githubLink="https://github.com/theeugenechong/tp"
                             />
                         </div>
                     </div>

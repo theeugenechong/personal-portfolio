@@ -24,7 +24,7 @@ export default function Home() {
             <div className="w-1/2 flex flex-col items-center self-center">
               <AnimatedText text="Engineering Solutions, Creating Value." className="!text-6xl !text-left" />
               <p className="my-4 text-base font-medium">
-                I am a soon-to-be Computer Engineering graduate, and I love solving problems 🤓, exploring the unknown 🙏, and creating value around me 💛, be it through code, design, or anything in between.
+                I am a soon-to-be Computer Engineering graduate, and I love solving problems, exploring the unknown, and creating value around me, be it through code, design, or anything in between.💛
               </p>
               <p className="mb-4 text-base font-medium">
               Explore my projects which showcase the expertise I have picked up throughout my time in university! 🚀
