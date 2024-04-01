@@ -113,7 +113,7 @@ const Projects = () => {
                         </div>
                         <div className="col-span-12">
                             <FeaturedProject
-                                title="GoCurrent"
+                                title="GoCurrent (in progress)"
                                 type="Academic Project"
                                 summary="A web-based VM implementation for a sublanguage of Go in TypeScript. Focuses mainly on concurrency constructs in Go. The project is built Next.js, Tailwind CSS, and TypeScript."
                                 img={project4}
@@ -123,7 +123,7 @@ const Projects = () => {
                         </div>
                         <div className="col-span-6">
                             <Project
-                                title="Rails Sample App"
+                                title="Rails Twitter Clone"
                                 type="Personal Project"
                                 img={project5}
                                 link="https://github.com/theeugenechong/hello_app"

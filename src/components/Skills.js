@@ -12,7 +12,7 @@ const Skill = ({ name, x, y }) => {
 const Skills = () => {
     return (
         <>
-            <h2 className="mt-64 text-8xl font-bold w-full text-center mb-10">Skills</h2>
+            <h2 className="mt-48 text-8xl font-bold w-full text-center mb-10">Skills</h2>
             <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark">
                 <motion.div className="flex items-center justify-center rounded-full font-semibold text-lg bg-dark dark:bg-light text-light dark:text-dark p-6 shadow-dark cursor-pointer" whileHover={{ scale: 1.05 }}>
                     SWE

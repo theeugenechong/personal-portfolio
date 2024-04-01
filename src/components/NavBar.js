@@ -10,7 +10,7 @@ const CustomLink = ({ href, title, className="" }) => {
     const router = useRouter();
 
     return (
-        <Link href={href} className={`${className} relative group`}>
+        <Link href={href} className={`${className} font-semibold text-lg relative group`}>
             {title}
 
             <span className={`
