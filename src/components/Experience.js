@@ -54,7 +54,7 @@ const Experience = () => {
                         companyLink="https://www.talenox.com/"
                         time="May 2022 - Aug 2022"
                         address="North Bridge Road, Singapore"
-                        work="Developed and maintained the frontend codebase for Facebook's mobile app, including implementing new features, fixing bugs, and optimizing performance."
+                        work="Developed, documented and tested payroll-related features for Talenox’s HR Information System web application using the Ruby on Rails framework and Angular.js."
                     />
                     {/* <ExperienceDetails
                         position="UI/UX Designer"
