@@ -4,10 +4,14 @@ import Link from "next/link";
 import Image from "next/image";
 import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
-import article1 from "../../public/images/articles/pagination component in reactjs.jpg";
-import article2 from "../../public/images/articles/create loading screen in react js.jpg"
-import simpleArticle1 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
+import article1 from "../../../public/images/articles/all-labor-is-worthwhile.jpg";
+import article2 from "../../../public/images/articles/rust-ownership-borrowing.jpg"
+// import simpleArticle1 from "../../../public/images/articles/wisdom.jpg";
+import simpleArticle2 from "../../../public/images/articles/utility-of-consensus.jpg";
+import simpleArticle3 from "../../../public/images/articles/oppenheimer.jpg";
+// import simpleArticle4 from "../../../public/images/articles/a-fresh-perspective-on-schedules.jpg";
 import { motion, useMotionValue } from "framer-motion";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -48,7 +52,7 @@ const MovingImage = ({ img, title, link }) => {
                 ref={imgRef} 
                 src={img} 
                 alt={title} 
-                className="z-10 w-96 h-auto hidden absolute rounded-lg" 
+                className="z-10 w-96 h-auto hidden absolute rounded-lg md:!hidden" 
             />
         </Link>
     );
@@ -62,10 +66,10 @@ const SimpleArticle = ({ img, title, date, link }) => {
                 { duration: 0.5, ease: "easeInOut"}
             }}
             viewport={{ once: true }}
-            className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light dark:bg-dark text-dark dark:text-light first:mt-0 border border-solid border-dark border-r-4 border-b-4"
+            className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light dark:bg-dark text-dark dark:text-light first:mt-0 border border-solid border-dark border-r-4 border-b-4 sm:flex-col"
         >
             <MovingImage img={img} title={title} link={link} /> 
-            <span className="text-primary dark:text-primaryDark font-semibold pl-4">{date}</span>
+            <span className="text-primary dark:text-primaryDark font-semibold pl-4 sm:self-start sm:pl-0 xs:text-sm">{date}</span>
         </motion.li>
     );
 };
@@ -86,7 +90,7 @@ const FeaturedArticle = ({ time, title, summary, img, link }) => {
                     />
                 </Link>
                 <Link href={link} target="_blank">
-                    <h2 className="capitalize text-3xl font-bold mb-3 mt-4 hover:underline">{title}</h2>
+                    <h2 className="capitalize text-3xl font-bold mb-3 mt-4 hover:underline xs:text-lg">{title}</h2>
                     <p className="font-medium mb-2">{summary}</p>
                     <span className="text-primary dark:text-primaryDark font-semibold">{time}</span>
                 </Link>
@@ -102,58 +106,53 @@ const Musings = () => {
                 <title>Musings | Eugene Chong</title>
                 <meta name="description" content="Articles written by me on various topics." />
             </Head>
+            <TransitionEffect />
             <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
                 <Layout className="pt-16">
-                    <AnimatedText text="Articles, Insights & Musings" className="mb-16" />
-                    <ul className="grid grid-cols-2 gap-16">
+                    <AnimatedText text="Articles, Insights & Musings" className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" />
+                    <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
                         <FeaturedArticle
                             time="9 min read"
-                            title="Build A Custom Pagination Component In Reactjs From Scratch"
+                            title="All Labor is Worthwhile"
                             summary="
-                            Learn how to build a custom pagination component in ReactJS from scratch.       Follow this step-by-step guide to integrate the Pagination component in your React project."
+                            A reflection on the value of all labor, no matter how menial or insignificant it may seem."
                             img={article1}
-                            link="/"
+                            link="/musings/all-labor-is-worthwhile"
                         />
                         <FeaturedArticle
                             time="10 min read"
-                            title="Create A Loading Screen In React JS"
+                            title="Rust Ownership and Borrowing"
                             summary="
-                            Learn how to create a loading screen in React JS. Follow this step-by-step guide to integrate the Loading Screen component in your React project."
+                            An exploration of the ownership and borrowing system in Rust, how it works and how it helps ensures memory safety and fearless concurrency."
                             img={article2}
-                            link="/"
+                            link="/musings/rust-ownership-borrowing"
                         />
                     </ul>
                     <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">All Articles</h2>
                     <ul>
                         <SimpleArticle
-                            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-                            img={simpleArticle1}
+                            title="Intelligence, Rationality and Wisdom"
+                            img={simpleArticle2}
                             date="March 30, 2024"
-                            link=""
+                            link="/musings/wisdom"
                         />
                         <SimpleArticle
-                            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-                            img={simpleArticle1}
+                            title="The Utility of Distributed Consensus"
+                            img={simpleArticle2}
                             date="March 30, 2024"
-                            link=""
+                            link="/musings/utility-of-consensus"
                         />
                         <SimpleArticle
-                            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-                            img={simpleArticle1}
+                            title="Oppenheimer"
+                            img={simpleArticle3}
                             date="March 30, 2024"
-                            link=""
+                            link="/musings/oppenheimer"
                         />
                         <SimpleArticle
-                            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-                            img={simpleArticle1}
+                            title="A Fresh Perspective on Schedules"
+                            img={simpleArticle3}
                             date="March 30, 2024"
-                            link=""
-                        />
-                        <SimpleArticle
-                            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-                            img={simpleArticle1}
-                            date="March 30, 2024"
-                            link=""
+                            link="/musings/a-fresh-perspective-on-schedules"
                         />
                     </ul>
                 </Layout>
