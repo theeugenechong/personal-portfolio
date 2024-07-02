@@ -110,7 +110,7 @@ const Projects = () => {
                                 type="Personal Project"
                                 img={project3}
                                 link="/"
-                                githubLink="https://www.github.com"
+                                githubLink="https://github.com/theeugenechong/personal-portfolio"
                             />
                         </div>
                         <div className="col-span-12">
