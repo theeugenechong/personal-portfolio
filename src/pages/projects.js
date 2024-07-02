@@ -117,7 +117,7 @@ const Projects = () => {
                             <FeaturedProject
                                 title="GoCurrent"
                                 type="Academic Project"
-                                summary="A web-based VM implementation for a sublanguage of Go in TypeScript. Focuses mainly on concurrency constructs in Go. The project is built Next.js, Tailwind CSS, and TypeScript."
+                                summary="A web-based virtual machine implementation for a sublanguage of Go in TypeScript. Focuses mainly on concurrency constructs in Go. The project is built with Next.js, Tailwind CSS, and TypeScript."
                                 img={project4}
                                 link="https://gocurrent.vercel.app/"
                                 githubLink={"https://www.github.com/cs4215-go-project"}

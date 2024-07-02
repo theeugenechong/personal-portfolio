@@ -5,7 +5,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
-import profilePic from '../../public/images/profile/profile-pic.jpg';
+import profilePic from '../../public/images/profile/profile-pic-drum.jpg';
 import Statistic from "@/components/Statistic";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
