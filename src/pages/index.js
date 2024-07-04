@@ -24,10 +24,10 @@ export default function Home() {
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full xl:text-left">
               <AnimatedText text="Engineering Solutions, Creating Value." className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl" />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                I am a soon-to-be Computer Engineering graduate, and I love solving problems, exploring the unknown, and creating value around me, be it through code, design, or anything in between.💛 
+                I am a recent Computer Engineering graduate from the National University of Singapore (NUS) 🤓 and I love solving problems, exploring the unknown, and creating value around me, be it through code, design, or anything in between.💛 
                 <br></br>
                 <br></br>
-                Explore my projects which showcase the expertise I have picked up throughout my time in university! 🚀
+                Explore my experiences and projects which showcase the expertise I have picked up throughout my time in university! 🚀
               </p>
               <div className="flex items-center self-start mt-3 lg:self-center">
                 <Link href="/Resume24.pdf" target={"_blank"} className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:border-light dark:hover:border-light transition-colors duration-500 ease-in-out shadow-dark cursor-pointer md:p-2 md:px-4 md:text-base sm:p-1 sm:px-2"

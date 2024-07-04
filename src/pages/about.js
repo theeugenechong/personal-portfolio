@@ -54,7 +54,7 @@ const About = () => {
                                 Hello, World! 🌍 I'm Eugene.
                             </p>
                             <p className="text-base font-medium my-4">
-                                I am currently in the final lap of my Computer Engineering undergrad journey, armed with a toolkit of programming languages like Go, Rust, Python, and C++. From software engineering to algorithms and distributed systems, even dabbling in a bit of machine learning, I've been on a WILD ride of discovery.
+                                I've recently completed my Computer Engineering undergrad journey at NUS, armed with a toolkit of programming languages like Go, Rust, Python, and C++. From software engineering to algorithms and distributed systems, even dabbling in a bit of machine learning, I've been on a WILD ride of discovery.
                             </p>
                             <p className="text-base font-medium my-4">
                                 They say university isn't just textbooks and exams (although, let's be honest they kinda were). I dove headfirst into a bunch of awesome engineering projects with my amazing peers. These adventures not only enhanced my technical skills, but also honed my soft skills. From leading teams to sparking brainstorming sessions, I've embraced every opportunity to grow.

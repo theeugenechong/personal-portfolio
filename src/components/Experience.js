@@ -46,7 +46,7 @@ const Experience = () => {
                         companyLink="https://univers.com/"
                         time="Jan 2023 - Jun 2023"
                         address="Keppel Bay Tower, Singapore"
-                        work="Worked on a team responsible for developing and conducting rigorous testing of Univers’ microservices application, employing a comprehensive approach encompassing manual and automated testing with Selenium, as well as unit and integration testing using the Java Cucumber framework"
+                        work="Worked on a team responsible for developing and conducting rigorous testing of Univers’ microservices application, employing a comprehensive approach encompassing manual and automated testing with Selenium, as well as unit and integration testing using the Java Cucumber framework."
                     />
                     <ExperienceDetails
                         position="Software Engineer Intern"
